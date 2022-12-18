@@ -1,0 +1,297 @@
+.app{
+    position: relative;
+}
+
+.transparent{
+    position: fixed;
+    display: flex;
+    padding: 0 80px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 960px;
+    height: 72px;
+    z-index: 10;
+}
+.transparent .img1{
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    
+}
+.transparent .right{
+    position: absolute;
+    display: flex;
+    top: 25px;
+    left:470px;
+}
+.transparent .menu{
+    display: flex;
+}
+
+.transparent .right .menu .menu-item{
+    width: 80px;
+    font-size: 14px;
+    float: left;
+    color: white;   
+    line-height: 15px;
+    text-align: center;
+}
+
+ /* 二级导航  */
+
+.menu-item .submenu-wrapper{
+    display: none;
+    text-align: center;
+}
+
+.submenu-wrapper .submenu{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    line-height: 20px;
+}
+
+.menu-item:hover .submenu-wrapper{
+    display: block;
+}
+
+.submenu-wrapper .submenu:hover{
+    background-color: white;
+}
+
+/* 用户头像 */
+
+.avatar{
+    position: absolute;
+    left: 730px;
+    top: 0px;
+}
+.avatar .avatar_img{
+    width: 36px;
+    height: 36px;
+}
+
+.avatar .login_tip{
+    width: 36px;
+    height: 16px;
+    position:absolute;
+    bottom: 35px;
+    left: 25px;
+}
+
+.container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* 背景 */
+.container .vdeio-bg{
+    position: fixed;
+    top: 100%;
+    left: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    background: no-repeat;
+    background-size: cover;
+}
+
+/* 手机视频 */
+.content{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content .middle{
+    top: 50px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.content .middle .middle-warpper{
+    
+
+    transform: translate(-60%,-60%);
+    display: f;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 100px;
+}
+
+.content .middle .middle-warpper .iphone-warpper{
+    margin-right: 60px;
+}
+
+.iphone-warpper .iphone{
+    position: absolute;
+    left: 400px;
+    top: 100px;
+}
+
+.iphone .iphone-mp4{
+    position: absolute;
+    width: 190px;
+    height: 290px;
+    margin: 18px 20px;
+    z-index: -1;
+}
+
+.iphone .iphone-mp4 .my-video{
+    width: 190px;
+    height: 290px;
+}
+
+.iphone .iphone-case{
+    position: absolute;
+    left: 40px;
+    top: 12px;
+    width: 200px;
+    height: 300px;
+    z-index: 1;
+    background-image: url(/小红书/Img/iphone11.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.description .logo-big{
+    width: 143px;
+    height: 100px;
+    background-image: url(/小红书/Img/xiaohongshu.png);
+    z-index: 10;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: absolute;
+    left: 620px;
+    top: 150px;
+}
+
+.description .lifestyle{
+    position: absolute;
+    left: 630px;
+    top: 220px;
+    white-space: nowrap;
+    color: white;
+    font-size: 45px;
+    margin: 13px 0 0;
+}
+
+.description .qrcodes{
+    margin-top: 36px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.ios{
+    position: absolute;
+    left: 630px;
+    top: 240px;
+}
+
+.description .qrcodes div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.description .qrcodes div span{
+    display: inline-block;
+    width: 300px;
+    height: 24px;
+    margin-right: 6px;
+}
+
+.reds-icon{
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
+    position: absolute;
+    left: 10px;
+}
+
+.description .qrcodes div span p{
+    font-size: 12px;
+    position:absolute;
+    left: 50px;
+    bottom: 1px;
+}
+
+.andriod{
+    position: absolute;
+    left: 750px;
+    top: 200px;
+}
+
+.footer .home-footer{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer.transparent{
+    background-color: transparent;
+}
+
+.top{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.top .navigation-bar-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px;
+}
+
+.top .navigation-bar{
+    width: 1080px;
+    margin: 0;
+    padding: 0 80px 0 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    position: relative;
+    top: 450px;
+}
+
+.top .navigation-bar .navigation-item{
+    cursor: pointer;
+    color: white;
+}
